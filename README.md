@@ -1,13 +1,40 @@
-1. Install [NodeJS](https://nodejs.org/en/download/)
-2. Go to project folder and execute `npm i`
-3. Enter the amount of wallets you want to generate in WALLETS_AMOUNT in index.js
-4. Execute the command `npm run ether` to generate Ethereum wallets or the command `npm run aptos` to generate aptos wallets
-5. Generated wallets will be printed in console in such form: 
+<div align="center">
+<h1>Ethereum and Aptos Wallet Generator</h1>
+
+</div>
+
+This project allows you to generate Ethereum and Aptos wallets using NodeJS.
+
+# Installation and Setup
+1. Install Node.js - Make sure Node.js is installed on your machine.
+
+2. Install Dependencies - Navigate to the project folder and run:
+
+```bash
+npm i
+```
+3. Set Wallet Quantity - Open ```index.js``` and set the number of wallets you want to generate by changing the ```WALLETS_AMOUNT``` variable.
+
+# Generating Wallets
+- To generate Ethereum wallets, run:
+
+```bash
+npm run ether
+```
+- To generate Aptos wallets, run:
+
+```bash
+npm run aptos
+```
+
+# Output
+Generated wallets will be displayed in the console with the following structure:
+
 ```
 {
-  mnemonic,
-  address,
-  publicKeyHex,
-  privateKeyHex
+  mnemonic: "your mnemonic phrase",
+  address: "wallet address",
+  publicKeyHex: "public key in hex format",
+  privateKeyHex: "private key in hex format"
 }
 ```
